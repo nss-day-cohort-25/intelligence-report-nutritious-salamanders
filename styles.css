@@ -1,1 +1,43 @@
-	
+:root {
+    --primaryColor: #2F3E50;
+    --font: 'lato';
+}
+
+h1, h2, h3, h4, h5, p, a {
+    font-family: var(--font);
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+    margin: 0;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+
+nav > span > a {
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+    color: var(--primaryColor);
+    font-size: 14px;
+}
+
+nav > span > a:last-child {
+    padding: 0 0 0 15px;
+}
+
+nav > span > a:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+nav > span > img {
+    height: 50px;
+    width: auto;
+}
