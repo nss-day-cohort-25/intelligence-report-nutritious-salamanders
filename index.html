@@ -10,13 +10,10 @@
 
 <body>
 	<header>
-
 		<nav id="navigation">
-			<span class='logo'>
-				<img src='https://avatars3.githubusercontent.com/u/12634274?s=280&v=4'>
-			</span>
+			<img src='img/nsslogo.png'>
 			<span class='links'>
-				<a href="index.html">Dashboard</a>
+				<a class='active' href="index.html">Dashboard</a>
 				<a href="rapsheet.html">Rap Sheet</a>
 				<a href="news.html">News Feed</a>
 				<a href="finance.html">Financials</a>
@@ -25,28 +22,47 @@
 	</header>
 
 	<div id='content' class='content'>
-		<div id='profile' class='content--profile'>
-			<img src='http://assets.nydailynews.com/polopoly_fs/1.2553087.1487949775!/img/httpImage/image.jpg_gen/derivatives/landscape_1200/mug-shot-ethel-rosenberg.jpg'>
+		<div id='profile' class='card card--profile'>
+			<img src='img/gracelyn.png'>
 			<h1>Gracelyn O'Donnel</h1>
-			<p>Ireland</p>
+			<span class='profile--info'>
+				<p>
+					<span class='title'>Nationality:</span> Ireland</p>
+				<p>
+					<span class='title'>Age:</span> 41</p>
+			</span>
 		</div>
-		<div class='content--associates'>
-			<h3>Known associates:</h3>
-			<p>Juanita Sanches (USA)</p>
-			<p>Bob Armstrong (Canada)</p>
-			<p>Jimbo Slice (Ireland)</p>
-			<p>Jennifer Robinson (Mexico)</p>
-		</div>
-		<div class='content--aliases'>
-			<h3>Known Aliases</h3>
-			<p>Grace Dogg</p>
-			<p>Irish Car Bomb</p>
-			<p>Rosie O'Donnel</p>
-			<p>O'Bombel</p>
-		</div>
-		<div class='content--map'>
-			<img src='img/map.png'>
-		</div>
+		<span class='card--row'>
+			<div class='card card--map'>
+				<img src='img/map.png'>
+			</div>
+			<div class='card card--a'>
+				<h3>Known associates:</h3>
+				<hr>
+				<p>Juanita Sanches (USA)</p>
+				<p>Bob Armstrong (Canada)</p>
+				<p>Jimbo Slice (Ireland)</p>
+				<p>Jennifer Robinson (Mexico)</p>
+			</div>
+		</span>
+		<span class='card--row'>
+			<div class='card card--a'>
+				<h3>Known associates:</h3>
+				<hr>
+				<p>Juanita Sanches (USA)</p>
+				<p>Bob Armstrong (Canada)</p>
+				<p>Jimbo Slice (Ireland)</p>
+				<p>Jennifer Robinson (Mexico)</p>
+			</div>
+			<div class='card card--a'>
+				<h3>Known Aliases</h3>
+				<hr>
+				<p>Grace Dogg</p>
+				<p>Irish Car Bomb</p>
+				<p>Rosie O'Donnel</p>
+				<p>O'Bombel</p>
+			</div>
+		</span>
 	</div>
 
 </body>

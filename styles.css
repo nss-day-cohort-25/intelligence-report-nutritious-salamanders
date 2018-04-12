@@ -12,6 +12,8 @@ body {
 }
 
 nav {
+    background-color: white;
+    z-index: 1;
     display: flex;
     align-items: center;
     height: 40px;
@@ -21,11 +23,22 @@ nav {
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
 }
 
+.active {
+    text-decoration: line-through #F88E00;
+    height: 3px;
+    opacity: 1;
+}
+
 nav > span > a {
     text-decoration: none;
     padding: 0 15px 0 15px;
     color: var(--primaryColor);
     font-size: 14px;
+    opacity: .6;
+}
+
+nav > img {
+    height: 40px;
 }
 
 nav > span > a:last-child {
