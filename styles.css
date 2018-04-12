@@ -77,13 +77,15 @@ nav > span > img {
 }
 .cards__split{
     background-color: blueviolet;
-    display: inline-table;
-    margin: 5px;
-    padding-left: 250px;
+	/* display: inline-block;  */
+	float:left;
+	height:90%;
+	width:35%;
+	margin: 5px 7.5%;
+	text-align: center;
 }
 
 .cards__cont{
     background-color: violet!important;
-    text-align: center;
 
 }
