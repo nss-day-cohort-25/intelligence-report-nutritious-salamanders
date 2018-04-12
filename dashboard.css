@@ -3,7 +3,7 @@ body {
 }
 
 .content {
-    padding: 50px 50px 50px 50px;
+    padding: 120px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,29 +24,29 @@ body {
 
 /* Row cards */
 
-.card--a {
+.card--a, .card--b {
     flex: 1;
     height: 270px;
 }
 
-.card--a:last-child {
-    margin-left: 20px;
+.card--a:last-child, .card--b:last-child {
+    margin-left: 30px;
 }
 
-.card--a > h3 {
+.card--a > h3, .card--b > h3 {
     color: white;
     opacity: .5;
     font-size: 14px;
     padding: 5px 5px 5px 25px;
 }
 
-.card--a > p {
+.card--a > p, .card--b > p {
     font-size: 13px;
     padding: 15px 0px 2px 25px;
     color: white;
 }
 
-.card--a > hr {
+.card--a > hr, .card--b > hr {
     padding: 0;
     color: #454545;
     border: .5px solid #454545;
@@ -96,15 +96,21 @@ body {
 
 /* Map card */
 
+.card--row-map {
+    display: flex;
+    flex-direction: row;
+}
+
 .card--map {
     height: 270px;
-    width: 50%;
+    width: 60%;
     overflow: hidden;
 }
 
 .card--b {
-    width: 50%;
+    width: 40%;
     height: 270px;
+    margin-left: 20px;
 }
 
 .card--map > img {
