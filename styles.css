@@ -41,3 +41,34 @@ nav > span > img {
     height: 50px;
     width: auto;
 }
+
+/* styling rapSheet News and Financials */
+
+.side__info{
+	background-color:green;
+	width:18%;
+	height:400px;
+	float:left;
+	margin: 2% 4% 0px;
+	border-radius: 10%;
+	position:fixed;
+}
+
+#profile__short img{
+	width:90%;
+}
+
+.cards__box{
+	background-color: blue;
+	width: 70%;
+	height: 100%;
+	float: right;
+	margin: 2% 4% 0 0;
+	border-radius:3%;
+}
+
+.cards__large{
+	background-color: blueviolet;
+	width:95%;
+	margin:10px auto;
+}
