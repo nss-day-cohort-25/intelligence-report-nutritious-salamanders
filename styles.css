@@ -4,7 +4,7 @@
 }
 
 h1, h2, h3, h4, h5, p, a {
-    font-family: var(--font);
+    font-family: 'lato';
 }
 
 body {
@@ -12,17 +12,24 @@ body {
 }
 
 nav {
-    background-color: white;
-    position: fixed;
-    z-index: 1;
     display: flex;
+    flex-direction: space-between;
+    justify-content: center;
     align-items: center;
     height: 40px;
-    justify-content: space-between;
-    padding: 15px 50px 15px 50px;
-    margin: 0;
-    width: 93vw;
+    background-color: white;
+    padding: 15px 5% 15px 5%;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.40);
+}
+
+.logo {
+    flex: 1;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .active {
