@@ -190,3 +190,30 @@ nav > span > img {
 .event{
     
 }
+
+/* Finance.html CSS Styling */
+
+
+
+#nav__finance , li {
+    list-style: none;
+    text-align: left;
+}
+
+
+#blackmailed__officials, img {
+    width: 300px;
+    height: 100px:
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+
+#content {
+    color: white;
+}
+
+#bank__Accts, a {
+    color: white;
+}
