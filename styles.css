@@ -178,8 +178,7 @@ nav > span > img {
 }
 
 .nav__news li{
-    width: 20%;
-    margin: 0 5%;
+    margin: 0 3%;
     display: inline-block;
 }
 
