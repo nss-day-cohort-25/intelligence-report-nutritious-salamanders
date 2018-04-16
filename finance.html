@@ -3,6 +3,20 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="">
+	<title>NSS Intelligence Agency</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>NSS Intelligence Agency</title>
@@ -15,15 +29,23 @@
 		<span class='nav--logo'>
 			<img src='img/nss.png'>
 		</span>
-		<a href='index.html'><i class="material-icons " id='home'>home</i></a>
-
-		<a href='newsfeed.html' class='active'><i class="material-icons active">person</i></a>
-
+		<a href='index.html'>
+			<i class="material-icons " id='home'>home</i>
+		</a>
+		<a href='newsfeed.html' class='active'>
+			<i class="material-icons active">person</i>
+		</a>
 		<i class="material-icons">settings</i>
 	</nav>
 
 	<div class='content'>
 		<div class='content--header'>
+			<span class='subnav'>
+				<a href='news.html'>Newsfeed</a>
+				<a href='rapsheet.html' >Rapsheet</a>
+				<a href='finance.html' class='subactive'>Finances</a>
+			</span>
+			<button id='refreshData' class='button--refresh'>Hide information</button>
 
 		</div>
 
@@ -36,4 +58,5 @@
 	</div>
 
 </body>
+
 </html>

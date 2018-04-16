@@ -13,7 +13,11 @@
 
 h1, h2, h3, h4, h5, a {
     font-family: var(--primaryFont);
+}
+
+a, button {
     text-decoration: none;
+    cursor: pointer;
 }
 
 p {
@@ -76,13 +80,42 @@ nav > span > img {
 }
 
 .content--header {
-    height: 80px;
+    height: 60px;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px 0 170px;
+    padding: 0px 80px 0 150px;
     border-bottom: 1px solid var(--accentGray);
+}
+
+.subnav > .subactive {
+    color: var(--accentColor);
+    font-weight: 800;
+}
+
+.subnav > a {
+    margin: 15px;
+    color: #5B6678;
+}
+
+.subnav > a:hover {
+    color: var(--primaryColor);
+}
+
+.content--header > button {
+    height: 36px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 12px 5px 12px;
+    background-color: var(--accentColor);
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.content--header > button:hover {
+    opacity: .7;
 }
 
 
@@ -90,7 +123,7 @@ nav > span > img {
     display: flex;
     justify-content: space-between;
     background-color: var(--backgroundColor);
-    padding: 40px 100px 0 170px;
+    padding: 40px 80px 0 150px;
     height: 100%;
 }
 
