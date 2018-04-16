@@ -202,7 +202,7 @@ nav > span > img {
 
 
 
-#nav__finance , li {
+#nav__finance li {
     list-style: none;
     text-align: left;
 }
@@ -221,7 +221,7 @@ nav > span > img {
     color: white;
 }
 
-#bank__Accts, a {
+#bank__Accts a {
     color: white;
 }
 
