@@ -1,0 +1,19 @@
+:root {
+    --primaryColor: #11151C;
+    --accentColor: #EC4E20;
+    --backgroundColor: #E7EBE3;
+    --warningColor: #FF9505;
+    --chartColor: #016FB9;
+    --successColor: #6cc551;
+
+    --primaryFont: 'lato';
+    --secondaryFont: 'crimson text';
+}
+
+h1, h2, h3, h4, h5, a {
+    font-family: var(--primaryFont);
+}
+
+p {
+    font-family: var(--secondaryFont);
+}
