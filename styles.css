@@ -202,10 +202,10 @@ nav > span > img {
 
 
 #blackmailed__officials, img {
-    width: 300px;
-    height: 100px:
+    width: 200px;
+    height: 200px:
     margin: auto;
-    border-radius: 50%;
+    border-radius: 50%;    
 }
 
 
@@ -216,4 +216,14 @@ nav > span > img {
 
 #bank__Accts, a {
     color: white;
+}
+
+#money__laundering {
+    color: darkblue;
+
+}
+
+.alert--icon {
+    width: 18px;
+    margin-top: -15px;
 }
