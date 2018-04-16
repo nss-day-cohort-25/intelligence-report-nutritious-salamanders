@@ -194,6 +194,46 @@ nav > span > img {
     color: lightgray;
 }
 
+.event{
+    
+}
+
+/* Finance.html CSS Styling */
+
+
+
+#nav__finance , li {
+    list-style: none;
+    text-align: left;
+}
+
+
+#blackmailed__officials, img {
+    width: 200px;
+    height: 200px:
+    margin: auto;
+    border-radius: 50%;    
+}
+
+
+
+#content {
+    color: white;
+}
+
+#bank__Accts, a {
+    color: white;
+}
+
+#money__laundering {
+    color: darkblue;
+
+}
+
+.alert--icon {
+    width: 18px;
+    margin-top: -15px;
+
 .event h2{
 	opacity: .7;
 	display: inline-block;
