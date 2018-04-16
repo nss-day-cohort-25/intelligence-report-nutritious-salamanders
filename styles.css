@@ -208,9 +208,9 @@ nav > span > img {
 }
 
 
-#blackmailed__officials, img {
+#blackmailed__officials img {
     width: 200px;
-    height: 200px:
+    height: 200px;
     margin: auto;
     border-radius: 50%;    
 }
@@ -233,6 +233,7 @@ nav > span > img {
 .alert--icon {
     width: 18px;
     margin-top: -15px;
+}
 
 .event h2{
 	opacity: .7;
