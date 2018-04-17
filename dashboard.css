@@ -10,7 +10,8 @@ h4 {
 }
 
 hr {
-    border: .5px solid var(--accentGray);
+    border: 1px solid var(--accentGray);
+    width: 100%;
     margin: 0;
 }
 
@@ -42,11 +43,6 @@ hr {
     margin: 18px 20px 18px 20px;
     color: var(--primaryColor);
     opacity: .4;
-}
-
-.dashCard > .dash--chart-header >hr {
-    width: 100%;
-    border: 1px solid var(--backgroundColor);
 }
 
 

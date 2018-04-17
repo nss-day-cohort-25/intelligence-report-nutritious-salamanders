@@ -1,5 +1,3 @@
-const allTasks = [];
-
 // Opens modal to create new task
 const taskModal = () => {
     let modal = document.querySelector('#modal'),
@@ -44,12 +42,10 @@ const createNewTask = document.querySelector('#createTask').addEventListener('cl
 
 function* idMaker() {
     let index = 3;
-    while (index < index+1)
-      yield index++;
-  }
-  
-  let gen = idMaker();
-
+    while (index < index + 1)
+        yield index++;
+}
+let gen = idMaker();
 
 // Posts tasks to the DOM
 const postTask = (task) => {
@@ -60,17 +56,13 @@ const postTask = (task) => {
         taskBody = document.createElement('p'),
         backlog = document.querySelector('#tasks-backlog');
 
-        console.log(task.name)
-
     taskHead.textContent = name;
     taskBody.textContent = description;
-
 
     structure.setAttribute('draggable', 'true');
     structure.setAttribute('ondragstart', 'drag(event)');
     structure.setAttribute('id', `task__${gen.next().value}`);
     structure.classList.add('indiv-task', 'drag');
-    console.log(structure)
 
     structure.appendChild(taskHead);
     structure.appendChild(taskBody);
