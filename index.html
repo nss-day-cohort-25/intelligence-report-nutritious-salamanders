@@ -73,7 +73,7 @@
 				<span class='col--header'>
 					<span class='col--header-text'>
 						<h4>Task list</h4>
-						<button id='refreshData' class='button--refresh'>Add task</button>
+						<button id='addTask'>Add task</button>
 					</span>
 					<hr>
 				</span>
@@ -97,14 +97,35 @@
 
 				</span>
 			</div>
-
-
 	</div>
 
+	<div class='modal hide' id='modal'>
+		<span class='modal--content'>
+			<span class='modal--content-close' id='closeModal'>&times;</span>
+			<h3 class='modal--content-title'>Create new task.</h3>
+			<p class='modal--content-body'>Busy day, huh? Add a new task to make sure that you're staying efficient when catching crooks.</p>
+			<span class='inputs'>
+				<label for='taskName'>Task name</label>
+				<input type='text' id='taskName' placeholder="Enter task name">
+
+				<label for='taskName'>Description</label>
+				<input type='text' id='taskDescription' placeholder="Enter description">
+
+				<label for='taskDue'>Due date</label>
+				<input type='text' id='taskDue' placeholder="Select due date">
+
+				<label for='taskPriority'>Priority level</label>
+				<input type='text' id='taskPriority' placeholder="Select priority">
+			</span>
+			<button id='addTask'>Add task</button>
+		</span>
 	</div>
+
+
 
 
 	<script src='dashboard.js'></script>
+	<script src='tasks.js'></script>
 </body>
 
 </html>
