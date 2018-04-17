@@ -1,0 +1,38 @@
+h2 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 800;
+    padding-left: 25px;
+    opacity: .5;
+}
+
+hr {
+    border: .5px solid var(--accentGray);
+}
+
+.content--dash {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--backgroundColor);
+    height: 100vh;
+}
+
+.col--left {
+    width: 70%;
+    background-color: var(--backgroundColor);
+}
+
+.col--right {
+    width: 30%;
+    background-color: white; 
+    border-left: 1px solid var(--accentGray);
+}
+

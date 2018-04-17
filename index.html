@@ -4,9 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="dashboard.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+
 	<title>NSS Intelligence Agency</title>
 	<link rel="shortcut icon" type="image/png" href="img/nss.png" />
+
 </head>
 
 <body>
@@ -15,23 +19,38 @@
 		<span class='nav--logo'>
 			<img src='img/nss.png'>
 		</span>
-		<a href='index.html' class='active'><i class="material-icons active" id='home'>home</i></a>
-		<a href='news.html'><i class="material-icons">person</i></a>
+		<a href='index.html' class='active'>
+			<i class="material-icons active" id='home'>home</i>
+		</a>
+		<a href='news.html'>
+			<i class="material-icons">person</i>
+		</a>
 		<i class="material-icons">settings</i>
 	</nav>
 
 	<div class='content'>
 		<div class='content--header'>
-
+			<span class='subnav'>
+				<h2>NSSIA Dashboard</h2>
+			</span>
+			<button id='refreshData' class='button--refresh'>Hide information</button>
 		</div>
 
-		<div class='content--body'>
+		<div class='content--dash'></div>
+			
+			<span class='col'>
+				<span class='col--left'></span>
+				<span class='col--right'>
+					<h4 class='col--title'>Task list</h4>
+					<hr>
+				</span>
+			</span>
 
-			<!-- PRIMARY CONTENT HERE -->
 
 		</div>
 
 	</div>
 
 </body>
+
 </html>
