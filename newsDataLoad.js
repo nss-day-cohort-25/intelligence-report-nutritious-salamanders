@@ -1,3 +1,5 @@
+let currentNewsData
+
 function loadDatabase() {
 	const databaseString = localStorage.getItem("newsDatabase")
 	return JSON.parse(databaseString)
