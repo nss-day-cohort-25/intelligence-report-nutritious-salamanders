@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="dashboard.css">
+	<link rel="stylesheet" href="dragula.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
 
 	<title>NSS Intelligence Agency</title>
 	<link rel="shortcut icon" type="image/png" href="img/nss.png" />
@@ -37,20 +37,31 @@
 		</div>
 
 		<div class='content--dash'></div>
-			
-			<span class='col'>
-				<span class='col--left'></span>
-				<span class='col--right'>
-					<h4 class='col--title'>Task list</h4>
-					<hr>
+
+		<span class='col'>
+			<span class='col--left'></span>
+			<span class='col--right'>
+				<h4 class='col--title'>Task list</h4>
+				<hr>
+				<span class='tasks' id='tasks' ondragover="allowDrop(event)" ondrop='drop(event)'>
+
+					<span id='drag' class='task-one drag' draggable="true" ondragstart="drag(event)">Card number 1</span>
+
+					<span id='drag' class='task-two drag' draggable="true" ondragstart="drag(event)">Card number 2</span>
+
+					<span id='drag' class='task-two drag' draggable="true" ondragstart="drag(event)">Card number 3</span>
+
 				</span>
 			</span>
+		</span>
 
-
-		</div>
 
 	</div>
 
+	</div>
+
+
+	<script src='dashboard.js'></script>
 </body>
 
 </html>
