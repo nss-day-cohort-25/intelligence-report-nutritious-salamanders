@@ -33,24 +33,59 @@
 			<span class='subnav'>
 				<h2>NSSIA Dashboard</h2>
 			</span>
-			<button id='refreshData' class='button--refresh'>Hide information</button>
+			<!-- <button id='refreshData' class='button--refresh'>Hide information</button> -->
 		</div>
 
 		<div class='content--dash'></div>
 
 		<span class='col'>
-			<span class='col--left'></span>
+			<span class='col--left'>
+				<span class='col--left-row'>
 
-			<span class='col--right'>
+					<span class='dash--profile dashCard'>
+						<img src='img/gracelyn.png'>
+						<h2>Gracelyn O'Donnel</h2>
+						<h5>Gender: Female</h5>
+						<h5>Age: 41</h5>
+						<h5>COO: Ireland</h5>
+					</span>
+
+					<span class='dash--chart dashCard'>
+						<span class='dash--chart-header'>
+							<h5>Total mentions per month</h5>
+							<hr>
+						</span>
+					</span>
+				</span>
+				<span class='col--left-row'>
+					<span class='dash--data dashCard'>
+						<span class='dash--chart-header'>
+							<h5>Money laundering</h5>
+							<hr>
+						</span>
+					</span>
+					<span class='dash--data dashCard'></span>
+				</span>
+
+			</span>
+
+			<div class='col--right'>
 				<span class='col--header'>
-					<h4 class='col--title'>Task list</h4>
+					<span class='col--header-text'>
+						<h4>Task list</h4>
+						<button id='addTask'>Add task</button>
+					</span>
 					<hr>
 				</span>
+
 				<span class='tasks'>
 					<span class='tasks--backlog' id='tasks-backlog'>
-						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">Card number 1</span>
 
-						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">Card number 2</span>
+						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">
+							<h2>Sample card title here</h2>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+						</span>
+
 					</span>
 
 					<span class='tasks--complete' id='tasks-complete' ondragover="allowDrop(event)" ondrop='drop(event)'>
@@ -61,15 +96,36 @@
 					</span>
 
 				</span>
+			</div>
+	</div>
+
+	<div class='modal hide' id='modal'>
+		<span class='modal--content'>
+			<span class='modal--content-close' id='closeModal'>&times;</span>
+			<h3 class='modal--content-title'>Create new task.</h3>
+			<p class='modal--content-body'>Busy day, huh? Add a new task to make sure that you're staying efficient when catching crooks.</p>
+			<span class='inputs'>
+				<label for='taskName'>Task name</label>
+				<input type='text' id='taskName' placeholder="Enter task name">
+
+				<label for='taskName'>Description</label>
+				<input type='text' id='taskDescription' placeholder="Enter description">
+
+				<label for='taskDue'>Due date</label>
+				<input type='text' id='taskDue' placeholder="Select due date">
+
+				<label for='taskPriority'>Priority level</label>
+				<input type='text' id='taskPriority' placeholder="Select priority">
 			</span>
-
-
+			<button id='addTask'>Add task</button>
+		</span>
 	</div>
 
-	</div>
+
 
 
 	<script src='dashboard.js'></script>
+	<script src='tasks.js'></script>
 </body>
 
 </html>
