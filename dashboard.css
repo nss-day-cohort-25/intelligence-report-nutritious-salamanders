@@ -69,8 +69,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    height: 320px;
+    width: 30%;
     margin-right: 30px;
     text-align: center;
 }
@@ -78,30 +77,29 @@ hr {
 .dash--profile > img {
     margin-bottom: 20px;
     border-radius: 100px;
-    height: 90px;
-    width: 90px;
+    height: 110px;
+    width: 110px;
 }
 
 .dash--profile > h2 {
     font-weight: 800;
-    font-size: 18px;
-    margin: 0 5px 20px 5px;
+    font-size: 22px;
+    margin: 0 5px 30px 5px;
 }
 
 .dash--profile > h5 {
     font-weight: 400;
     opacity: .8;
-    margin: 0px 0 10px 0;
+    margin: 0px 0 20px 0;
 }
 
 .dash--chart {
-    width: 85%;
-    height: 320px;
+    width: 70%;
+    padding-bottom: 50px;
 }
 
 .dash--data {
     width: 50%;
-    height: 300px;
     margin-right: 30px;
 }
 

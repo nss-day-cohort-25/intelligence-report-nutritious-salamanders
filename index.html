@@ -53,9 +53,8 @@
 						<span class='dash--chart-header'>
 							<h5>Total mentions per month</h5>
 							<hr>
+							<canvas id='lineChart'></canvas>
 						</span>
-
-						<!-- Enter chart here -->
 
 					</span>
 
@@ -63,14 +62,13 @@
 				<span class='col--left-row'>
 					<span class='dash--data dashCard'>
 						<span class='dash--chart-header'>
-							<h5>Money laundering</h5>
+							<h5>Funds laundered</h5>
 							<hr>
 						</span>
-
-						<!-- Enter chart here -->
-
+						<canvas id='barChart'></canvas>
 					</span>
-					<span class='dash--data dashCard'></span>
+
+					<div class='dash--data dashCard' id='map'></div>
 				</span>
 
 			</span>
@@ -128,8 +126,11 @@
 
 
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDywOXNmO1UEXTdjvQREy650p645gfzvbg&callback=initMap"> </script>
 	<script src='dashboard.js'></script>
 	<script src='tasks.js'></script>
+	<script src='charts.js'></script>
 </body>
 
 </html>
