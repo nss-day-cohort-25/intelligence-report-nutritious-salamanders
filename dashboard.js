@@ -1,3 +1,4 @@
+//Drag and drop functionality
 const allowDrop = (allowdropevent) => {
     allowdropevent.preventDefault();
 }
@@ -11,4 +12,3 @@ const drop = (dropevent) => {
     let data = dropevent.dataTransfer.getData("text");
     dropevent.target.appendChild(document.getElementById(data));
 }
-

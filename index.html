@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="dashboard.css">
 	<link rel="stylesheet" href="dragula.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Crimson+Text|Lato" rel="stylesheet">
 
 	<title>NSS Intelligence Agency</title>
 	<link rel="shortcut icon" type="image/png" href="img/nss.png" />
@@ -37,7 +37,6 @@
 		</div>
 
 		<div class='content--dash'></div>
-
 		<span class='col'>
 			<span class='col--left'>
 				<span class='col--left-row'>
@@ -54,17 +53,22 @@
 						<span class='dash--chart-header'>
 							<h5>Total mentions per month</h5>
 							<hr>
+							<canvas id='lineChart'></canvas>
 						</span>
+
 					</span>
+
 				</span>
 				<span class='col--left-row'>
 					<span class='dash--data dashCard'>
 						<span class='dash--chart-header'>
-							<h5>Money laundering</h5>
+							<h5>Funds laundered</h5>
 							<hr>
 						</span>
+						<canvas id='barChart'></canvas>
 					</span>
-					<span class='dash--data dashCard'></span>
+
+					<div class='dash--data dashCard' id='map'></div>
 				</span>
 
 			</span>
@@ -81,8 +85,12 @@
 				<span class='tasks'>
 					<span class='tasks--backlog' id='tasks-backlog'>
 
-						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">
-							<h2>Sample card title here</h2>
+						<span id='task__1' class='indiv-task drag' draggable="true" ondragstart="drag(event)">
+							<h2>Rent uHaul Truck for Stakeout</h2>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+						</span>
+						<span id='task__2' class='indiv-task drag' draggable="true" ondragstart="drag(event)">
+							<h2>Order Lunch for the Team</h2>
 							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
 						</span>
 
@@ -109,20 +117,20 @@
 				<input type='text' id='taskName' placeholder="Enter task name">
 
 				<label for='taskName'>Description</label>
-				<input type='text' id='taskDescription' placeholder="Enter description">
-
-				<label for='taskDue'>Due date</label>
-				<input type='text' id='taskDue' placeholder="Select due date">
-
-				<label for='taskPriority'>Priority level</label>
-				<input type='text' id='taskPriority' placeholder="Select priority">
+				<textarea id='taskDescription' placeholder="Enter description"></textarea>
 			</span>
-			<button id='addTask'>Add task</button>
+			<button id='createTask'>Create task</button>
 		</span>
 	</div>
 
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDywOXNmO1UEXTdjvQREy650p645gfzvbg&callback=initMap"> </script>
 	<script src='dashboard.js'></script>
 	<script src='tasks.js'></script>
+	<script src='charts.js'></script>
 </body>
 
 </html>
