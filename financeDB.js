@@ -32,27 +32,27 @@ financeDB.businesses.push(
      name: `Sunland Park Racetrack & Casino`,
      location: `Las Cruces, NM`,
      worth: 400,
-     laundered: .5  
+     laundered: 25  
     },
     {
      name: `Nashville Car Wash & Detail`,
      location: `Nashville, TN`,
-     worth: 8.2,
+     worth: 112.2,
      laundered: 2.6  
   
     },
     {
      name: `Baltimore Technologies`,
      location: `Dublin, IR`,
-     worth: 400,
-     laundered: 1.25  
+     worth: 200,
+     laundered: 10.25  
   
     },
     {
      name: `Uberfyt`,
      location: `Silicon Valley, CA`,
-     worth: 30000,
-     laundered: 9.5  
+     worth: 354,
+     laundered: 90.5  
   
     },
 
