@@ -1,12 +1,75 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="dashboard.css">
+	<link rel="stylesheet" href="dragula.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<title>NSS Intelligence Agency</title>
+	<link rel="shortcut icon" type="image/png" href="img/nss.png" />
+
 </head>
 
 <body>
-	
+
+	<nav>
+		<span class='nav--logo'>
+			<img src='img/nss.png'>
+		</span>
+		<a href='index.html' class='active'>
+			<i class="material-icons active" id='home'>home</i>
+		</a>
+		<a href='news.html'>
+			<i class="material-icons">person</i>
+		</a>
+		<i class="material-icons">settings</i>
+	</nav>
+
+	<div class='content'>
+		<div class='content--header'>
+			<span class='subnav'>
+				<h2>NSSIA Dashboard</h2>
+			</span>
+			<button id='refreshData' class='button--refresh'>Hide information</button>
+		</div>
+
+		<div class='content--dash'></div>
+
+		<span class='col'>
+			<span class='col--left'></span>
+
+			<span class='col--right'>
+				<span class='col--header'>
+					<h4 class='col--title'>Task list</h4>
+					<hr>
+				</span>
+				<span class='tasks'>
+					<span class='tasks--backlog' id='tasks-backlog'>
+						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">Card number 1</span>
+
+						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">Card number 2</span>
+					</span>
+
+					<span class='tasks--complete' id='tasks-complete' ondragover="allowDrop(event)" ondrop='drop(event)'>
+						<span class='tasks--complete-text'>
+							<img src='img/check.svg'>
+							<h5>Mark as complete</h5>
+						</span>
+					</span>
+
+				</span>
+			</span>
+
+
+	</div>
+
+	</div>
+
+
+	<script src='dashboard.js'></script>
 </body>
+
 </html>
