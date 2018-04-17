@@ -40,20 +40,28 @@
 
 		<span class='col'>
 			<span class='col--left'></span>
+
 			<span class='col--right'>
-				<h4 class='col--title'>Task list</h4>
-				<hr>
-				<span class='tasks' id='tasks' ondragover="allowDrop(event)" ondrop='drop(event)'>
+				<span class='col--header'>
+					<h4 class='col--title'>Task list</h4>
+					<hr>
+				</span>
+				<span class='tasks'>
+					<span class='tasks--backlog' id='tasks-backlog'>
+						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">Card number 1</span>
 
-					<span id='drag' class='task-one drag' draggable="true" ondragstart="drag(event)">Card number 1</span>
+						<span id='drag' class='indiv-task drag' draggable="true" ondragstart="drag(event)">Card number 2</span>
+					</span>
 
-					<span id='drag' class='task-two drag' draggable="true" ondragstart="drag(event)">Card number 2</span>
-
-					<span id='drag' class='task-two drag' draggable="true" ondragstart="drag(event)">Card number 3</span>
+					<span class='tasks--complete' id='tasks-complete' ondragover="allowDrop(event)" ondrop='drop(event)'>
+						<span class='tasks--complete-text'>
+							<img src='img/check.svg'>
+							<h5>Mark as complete</h5>
+						</span>
+					</span>
 
 				</span>
 			</span>
-		</span>
 
 
 	</div>
