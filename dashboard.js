@@ -10,5 +10,6 @@ const drop = (dropevent) => {
     dropevent.preventDefault();
     let data = dropevent.dataTransfer.getData("text");
     dropevent.target.appendChild(document.getElementById(data));
+
 }
 

@@ -54,7 +54,7 @@ hr {
     padding: 40px 40px 40px 100px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     background-color: var(--backgroundColor);
 }
 
@@ -68,23 +68,24 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 25%;
-    height: 260px;
+    height: 320px;
     margin-right: 30px;
     text-align: center;
 }
 
 .dash--profile > img {
-    margin: 20px;
+    margin-bottom: 20px;
     border-radius: 100px;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
 }
 
 .dash--profile > h2 {
     font-weight: 800;
-    margin: 0 5px 14px 5px;
+    font-size: 18px;
+    margin: 0 5px 20px 5px;
 }
 
 .dash--profile > h5 {
@@ -95,7 +96,7 @@ hr {
 
 .dash--chart {
     width: 85%;
-    height: 260px;
+    height: 320px;
 }
 
 .dash--data {
@@ -112,7 +113,7 @@ hr {
 /* Drag and drop */
 
 .col--right {
-    width: 30%;
+    width: 25%;
     background-color: white; 
     border-left: 1px solid var(--accentGray);
     display: flex;
@@ -238,13 +239,20 @@ hr {
 .inputs {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .inputs > input {
     height: 34px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding-left: 10px;
+    border: 1px solid var(--accentGray);
+}
+
+.inputs > textarea {
+    padding: 15px 0 0 15px;
+    height: 60px;
+    resize: none;
     border: 1px solid var(--accentGray);
 }
 
@@ -252,7 +260,7 @@ hr {
     font-family: 'lato';
     font-size: 12px;
     font-weight: 600;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .modal--content > button {
