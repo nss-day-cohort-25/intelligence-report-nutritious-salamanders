@@ -79,7 +79,7 @@ financeDB.blackMailed.push(
 
 const saveToDatabase = (databaseName, databaseObject) => {
     const stringifiedDB = JSON.stringify(databaseObject)
-    console.log(stringifiedDB)
+    // console.log(stringifiedDB)
     localStorage.setItem(databaseName, stringifiedDB)
 }
 
