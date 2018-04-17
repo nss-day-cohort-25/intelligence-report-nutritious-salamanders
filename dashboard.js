@@ -8,6 +8,7 @@ const drag = (dragevent) => {
 
 const drop = (dropevent) => {
     dropevent.preventDefault();
-    var data = dropevent.dataTransfer.getData("text");
+    let data = dropevent.dataTransfer.getData("text");
     dropevent.target.appendChild(document.getElementById(data));
 }
+
