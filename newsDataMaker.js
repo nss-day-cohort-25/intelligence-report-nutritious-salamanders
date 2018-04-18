@@ -44,7 +44,7 @@ function newEvent(headline, rating, date, location, victims, witnesses, law, des
 		}
 	})
 
-	currentNewsData.events.push(event)
+	currentNewsData.events.unshift(event)
 
 }
 
