@@ -4,34 +4,57 @@ const rapData2 = document.querySelector("#rapcontent")
 
 const cityDomBuilder = (data) => {
 
-    let row = document.createElement("div")
-    row.className = "rapsheet_row"
+//     let row = document.createElement("div")
+//     row.className = "rapsheet_row"
 
-rapMaker.rapsheet.forEach(
-    (currentRapsheet, i) => {
-            if(i !== 0 && row.childNodes.length  !== 0 )
-                rapData2.appendChild(row)
-                row = document.createElement("div")
-                row.className = "rapsheet__row"
+// rapMaker.rapsheet.forEach(
+//     (currentRapsheet, i) => {
+//             if(i !== 0 && row.childNodes.length  !== 0 )
+//                 rapData2.appendChild(row)
+//                 row = document.createElement("span")
+//                 row.className = "rapsheet__row"
 
            
-                    const rapSection = document.createElement("div")
-                    rapSection.className = "rap_with_border"
+//                     const rapSection = document.createElement("div")
+//                     rapSection.className = "rap_with_border"
 
-                    const header = document.createElement("h1")
-                    header.classList = "rapsheet_title"
-                    header.textContent = currentRapsheet.title
-                    rapSection.appendChild(header)
+//                     const header = document.createElement("h1")
+//                     header.classList = "rapsheet_title"
+//                     header.textContent = currentRapsheet.title
+//                     rapSection.appendChild(header)
 
-                    const content = document.createElement("p")
-                    content.classList = "rapsheet_content"
-                    content.textContent = currentRapsheet.value
-                    rapSection.appendChild(content)
+//                     const content = document.createElement("h4")
+//                     content.classList = "rapsheet_content"
+//                     content.textContent = currentRapsheet.value
+//                     rapSection.appendChild(content)
 
-                row.appendChild(rapSection)
+//                 row.appendChild(rapSection)
             
 
-    });
+// 	});
+
+	const frag = document.createDocumentFragment()
+	
+	rapMaker.rapsheet.forEach(
+		(currentRapsheet) => {
+
+			const rapSection = document.createElement("div")
+			rapSection.className = "rap_with_border card rap__card"
+
+			const header = document.createElement("h1")
+			header.classList = "rapsheet_title"
+			header.textContent = currentRapsheet.title
+			rapSection.appendChild(header)
+
+			const content = document.createElement("p")
+			content.classList = "rapsheet_content"
+			content.textContent = currentRapsheet.value
+			rapSection.appendChild(content)
+
+			frag.appendChild(rapSection)
+		})
+
+		rapData2.appendChild(frag)
 
 }
 

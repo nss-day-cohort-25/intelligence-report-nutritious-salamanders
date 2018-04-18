@@ -1,4 +1,4 @@
-const allTasks = [];
+let allTasks = [];
 
 // Opens modal to create new task
 const taskModal = () => {
@@ -38,18 +38,17 @@ const createTask = () => {
     clearFields();
     allTasks.push(task);
     postTask(task)
+    taskCount();
 }
 
 const createNewTask = document.querySelector('#createTask').addEventListener('click', createTask)
 
 function* idMaker() {
     let index = 3;
-    while (index < index+1)
-      yield index++;
-  }
-  
-  let gen = idMaker();
-
+    while (index < index + 1)
+        yield index++;
+}
+let gen = idMaker();
 
 // Posts tasks to the DOM
 const postTask = (task) => {
@@ -60,21 +59,34 @@ const postTask = (task) => {
         taskBody = document.createElement('p'),
         backlog = document.querySelector('#tasks-backlog');
 
-        console.log(task.name)
-
     taskHead.textContent = name;
     taskBody.textContent = description;
-
 
     structure.setAttribute('draggable', 'true');
     structure.setAttribute('ondragstart', 'drag(event)');
     structure.setAttribute('id', `task__${gen.next().value}`);
     structure.classList.add('indiv-task', 'drag');
-    console.log(structure)
 
     structure.appendChild(taskHead);
     structure.appendChild(taskBody);
 
     backlog.appendChild(structure)
-
 }
+
+const taskCount = () => {
+    const printTotal = document.querySelector('#totalTasks');
+    const backLog = document.querySelector('#tasks-backlog');
+    const children = backLog.childNodes;
+    let count = 0;
+
+    children.forEach(child => {
+        if (child.nodeName === 'SPAN') {
+            count += 1;
+        }
+    })
+
+    printTotal.classList.add('total-tasks');
+    printTotal.textContent = `(${count} tasks)`
+}
+
+taskCount();

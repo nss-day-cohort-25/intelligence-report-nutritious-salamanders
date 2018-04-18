@@ -60,8 +60,8 @@ let barChart = new Chart(myBarChart, {
             padding: {
                 left: 30,
                 right: 40,
-                top: 30,
-                bottom: 50
+                top: 40,
+                bottom: 30
             }
         },
         legend: {
