@@ -6,7 +6,10 @@ const newsPrint = () =>{
 		const card = document.createElement("section")
 		card.classList = "card event"
 
-		const headline = document.createElement("h2")
+		const topline = document.createElement("h2")
+		topline.classList = "topline"
+
+		const headline = document.createElement("span")
 		headline.textContent = currentEvent.headline
 		topline.appendChild(headline)
 
