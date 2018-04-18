@@ -29,13 +29,14 @@
 	</nav>
 
 	<div class='content'>
-		<div class='content--header'>
+		<div class='dashboard--header'>
 			<span class='subnav'>
 				<h2>NSSIA Dashboard</h2>
 			</span>
 		</div>
 
 		<div class='content--dash'></div>
+
 		<span class='col'>
 			<span class='col--left'>
 				<span class='col--left-row'>
@@ -68,6 +69,30 @@
 					</span>
 
 					<div class='dash--data dashCard' id='map'></div>
+				</span>
+
+				<span class='col--left-row'>
+					<span class='dash--widget dashCard'>
+						<span class='dash--chart-header'>
+							<h5>Known associates</h5>
+							<hr>
+						</span>
+						<span id='associates'></span>
+					</span>
+					<span class='dash--widget dashCard'>
+						<span class='dash--chart-header'>
+							<h5>Nicknames</h5>
+							<hr>
+						</span>
+						<span id='nicknames'></span>
+					</span>
+					<span class='dash--widget dashCard'>
+						<span class='dash--chart-header'>
+							<h5>Countries visiteds</h5>
+							<hr>
+						</span>
+						<span id='countries'></span>
+					</span>
 				</span>
 
 			</span>
@@ -124,11 +149,11 @@
 
 
 
-
+	
+	<script src='dashboardDB.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDywOXNmO1UEXTdjvQREy650p645gfzvbg&callback=initMap"> </script>
 	<script src='dashboard.js'></script>
-	<script src='dashboardDB.js'></script>
 	<script src='tasks.js'></script>
 	<script src='charts.js'></script>
 	<script src='createCard.js'></script>
