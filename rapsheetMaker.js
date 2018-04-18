@@ -11,7 +11,7 @@ rapMaker.rapsheet.forEach(
     (currentRapsheet, i) => {
             if(i !== 0 && row.childNodes.length  !== 0 )
                 rapData2.appendChild(row)
-                row = document.createElement("div")
+                row = document.createElement("span")
                 row.className = "rapsheet__row"
 
            
@@ -23,7 +23,7 @@ rapMaker.rapsheet.forEach(
                     header.textContent = currentRapsheet.title
                     rapSection.appendChild(header)
 
-                    const content = document.createElement("p")
+                    const content = document.createElement("h4")
                     content.classList = "rapsheet_content"
                     content.textContent = currentRapsheet.value
                     rapSection.appendChild(content)

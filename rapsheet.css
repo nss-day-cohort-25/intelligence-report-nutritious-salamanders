@@ -1,0 +1,21 @@
+.content--rap{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:var(--backgroundColor);
+    height:100%;
+    padding:40px 30px 0px 30px;
+}
+ 
+#rapcontent{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    width:100%;
+    margin:0 0 25px;
+}
+
+.col__right{
+    width: 75%;
+}
