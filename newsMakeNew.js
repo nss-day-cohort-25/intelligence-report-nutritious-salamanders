@@ -16,6 +16,7 @@ const clearFields = () => {
 		rating = document.querySelector('#eventRating'),
 		date = document.querySelector('#eventDate'),
 		location = document.querySelector('#eventLocation'),
+		description = document.querySelector('#eventDescription'),
 		witnesses = document.querySelector('#eventWitnesses'),
 		victims = document.querySelector('#eventVictims'),
 		law = document.querySelector('#eventLaw');
@@ -25,6 +26,7 @@ const clearFields = () => {
 	rating.value = "";
 	date.value = "";
 	location.value = "";
+	description.value = "";
 	witnesses.value = "";
 	victims.value = "";
 	law.value = "";
@@ -35,6 +37,7 @@ const createEvent = () => {
 		rating = document.querySelector('#eventRating').value,
 		date = document.querySelector('#eventDate').value,
 		location = document.querySelector('#eventLocation').value,
+		description = document.querySelector('#eventDescription').value,
 		witnesses = document.querySelector('#eventWitnesses').value,
 		victims = document.querySelector('#eventVictims').value,
 		law = document.querySelector('#eventLaw').value;
@@ -58,7 +61,7 @@ const createEvent = () => {
 		law += " responded to the incident."
 
 	clearFields();
-	newEvent(name, rating, date, location, witArr, vicArr, law)
+	newEvent(name, rating, date, location, witArr, vicArr, law, description)
 	saveNews()
 	closeBox()
 	window.location.reload()
