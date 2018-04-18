@@ -49,7 +49,7 @@ financeDB.businesses.push(
   
     },
     {
-     name: `Uberfyt`,
+     name: `Uberfyt Technologies`,
      location: `Silicon Valley, CA`,
      worth: 354,
      laundered: 90.5  
@@ -59,20 +59,24 @@ financeDB.businesses.push(
 )
 financeDB.blackMailed.push(
     {
-     name: `Seán T. O'Kelly`,
-     position: `Vice President of the Irish Free State`
+     name: `Arlene Foster`,
+     position: `First Minister of Northern Ireland`,
+     image: `img/AFoster.png`
     },
     {
      name: `Bill Haslam`,
-     position: `Governor of TN`
+     position: `Governor of TN`,
+     image: `img/BHaslam.jpg`
     },
     {
      name: `Bill de Blasio`,
-     position: `Mayor of NYC`
+     position: `Mayor of NYC`,
+     image: `img/BdeBlasio.png`
     },
     {
      name: `Huma Abedin`,
-     position: `Political Staffer`
+     position: `Political Staffer`,
+     image: `img/HAbedin.jpg`
     }
 )
 
