@@ -52,9 +52,42 @@
 		</div>
 
 		<div class='content--body--news'>
+			<div id="blur__page" class="hide">
+				<div class="add__box">
+						<span class='add__box__close' id='close__box'>&times;</span>
+						<h2>New Event</h2>
+						<span class="inputs">
+							<label for="eventName">Name of event</label>
+							<input type='text' id='eventName' placeholder="Enter event name">
+
+							<label for="eventRating">Rating</label>
+							<input type='text' id='eventRating' placeholder="Enter rating percentage">
+							
+							<label for="eventDate">Date</label>
+							<input type='text' id='eventDate' placeholder="Enter event date">
+
+							<label for="eventLocation">Location</label>
+							<input type='text' id='eventLocation' placeholder="Enter event Location">
+
+							<label for="eventWitnesses">Witnesses</label>
+							<input type='text' id='eventWitnesses' placeholder="Enter event Witnesses separated by commas">
+
+							<label for="eventVictims">Victims</label>
+							<input type='text' id='eventVictims' placeholder="Enter event Victims separated by commas">
+
+							<label for="eventLaw">Law</label>
+							<input type='text' id='eventLaw' placeholder="Enter the law enforcement that responded">
+							
+							<button id='createEvent'>Create Event</button>
+						</span>
+				</div>
+			</div>
 			<div class="col__left">
 				<div id="side__profile" class="card">
 
+				</div>
+				<div class="new__event card">
+					<button id="event__add"><h2>New Event</h2></button>
 				</div>
 			</div>
 			<div class="col__right">
@@ -75,6 +108,7 @@
 	<script src="newsDataSave.js"></script>
 	<script src="newsDataPrint.js"></script>
 	<script src="newsMain.js"></script>
+	<script src="newsMakeNew.js"></script>
 </body>
 
 </html>

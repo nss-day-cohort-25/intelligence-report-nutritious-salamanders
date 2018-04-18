@@ -34,18 +34,28 @@ const newsPrint = () =>{
 
 		const victim = document.createElement("p")
 		victim.textContent = "Victims: "
+		let first = true
 		currentEvent.victims.forEach(iter => {
-			console.log(iter)
-			victim.textContent += (iter + ", ")
+			if(first){
+				victim.textContent += (iter)
+				first = false;
+			}else{
+				victim.textContent += (", "+ iter)
+			}
 			
 		})		
 		card.appendChild(victim)
 
 		const witness = document.createElement("p")
 		witness.textContent = "Witnesses: "
+		first = true;
 		currentEvent.witnesses.forEach(iter => {
-			witness.textContent += (iter + ", ")
-			
+			if(first){
+				witness.textContent += (iter)
+				first = false;
+			}else{
+				witness.textContent += (", "+ iter)
+			}
 		})		
 		card.appendChild(witness)
 
