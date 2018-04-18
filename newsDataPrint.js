@@ -6,19 +6,15 @@ const newsPrint = () =>{
 		const card = document.createElement("section")
 		card.classList = "card event"
 
-		const topline = document.createElement("h2")
-		topline.classList = "title"
 
-		const headline = document.createElement("span")
+		const headline = document.createElement("h2")
 		headline.textContent = currentEvent.headline
-		topline.appendChild(headline)
+		card.appendChild(headline)
 
-		const rating = document.createElement("span")
+		const rating = document.createElement("h2")
 		rating.classList = "rating"
 		rating.textContent = currentEvent.rating
-		topline.appendChild(rating)
-
-		card.appendChild(topline)
+		card.appendChild(rating)
 
 		const date = document.createElement("p")
 		date.textContent = currentEvent.date
