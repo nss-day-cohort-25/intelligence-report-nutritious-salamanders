@@ -150,6 +150,19 @@ hr {
     margin-right: 20px;
 }
 
+.col--header-text > h5 {
+    font-weight: 800;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.total-tasks {
+    margin: 0;
+    padding-left: 10px;
+    font-weight: 800;
+    color: var(--accentColor);
+}
+
 .col--header-text > button {
     height: 32px;
     font-size: 13px;
@@ -165,11 +178,13 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 87%;
+    height: 85%;
 }
 
 .tasks--backlog {
     display: flex;
+    height: 630px;
+    overflow: scroll;
     flex-direction: column;
     margin: 10px 10px 0 10px;
 }
@@ -207,7 +222,6 @@ hr {
     flex-direction: column;
     margin: 5px 0 5px ;
     padding: 20px 20px 20px 20px;
-    height: 100%;
     background-color: white;
     border: 1px solid var(--accentGray);
     border-radius: 4px;

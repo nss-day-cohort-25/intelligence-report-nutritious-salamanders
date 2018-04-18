@@ -1,3 +1,5 @@
+let allTasks = [];
+
 // Opens modal to create new task
 const taskModal = () => {
     let modal = document.querySelector('#modal'),
@@ -36,6 +38,7 @@ const createTask = () => {
     clearFields();
     allTasks.push(task);
     postTask(task)
+    taskCount();
 }
 
 const createNewTask = document.querySelector('#createTask').addEventListener('click', createTask)
@@ -68,5 +71,22 @@ const postTask = (task) => {
     structure.appendChild(taskBody);
 
     backlog.appendChild(structure)
-
 }
+
+const taskCount = () => {
+    const printTotal = document.querySelector('#totalTasks');
+    const backLog = document.querySelector('#tasks-backlog');
+    const children = backLog.childNodes;
+    let count = 0;
+
+    children.forEach(child => {
+        if (child.nodeName === 'SPAN') {
+            count += 1;
+        }
+    })
+
+    printTotal.classList.add('total-tasks');
+    printTotal.textContent = `(${count} tasks)`
+}
+
+taskCount();
